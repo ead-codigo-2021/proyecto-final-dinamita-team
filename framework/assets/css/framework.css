@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 *,
 *::after,
 *::before {
@@ -38,6 +42,8 @@ h1 {
 }
 h2 {
     color: rgba(169, 50, 38);
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 address {
     color: rgba(169, 50, 38);;
@@ -110,6 +116,46 @@ form .input:focus {
     color: whitesmoke;
     background-color: #333;
 }
+.site-navigation a:hover {
+    color: #333;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}
+.home-presentation {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'text-descrip img-prin';
+    grid-column-gap: 50px;
+}
+.text-descrip {
+    grid-area: text-descrip;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.img-prin {
+    grid-area: img-prin;
+    width: 100%; 
+    height: auto;
+    padding-top: 15%;
+    padding-bottom: 15%;
+}
+.gallery {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .image {
+    width: 100px;
+    flex: 1 0 auto;
+  }
+  .featured-image {
+    height: 300px;
+    width: auto;
+    flex: 0 0 100%;
+    
+  }
 .site-footer {
     padding: 2rem;
     background-color: var(--color-bg);
