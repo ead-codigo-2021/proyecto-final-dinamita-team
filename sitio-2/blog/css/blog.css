@@ -24,6 +24,13 @@ html {
     }
     
 }
+.cards-group {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+}
+.comentarios {
+    padding-bottom: 3rem;
+}
 body{
     font-family: 'Raleway', 'Roboto Slab', 'Helvetica';
     font-size: 1rem;
@@ -40,8 +47,8 @@ h3 {
 h1 {
     font-size: 2em;
     text-transform: uppercase;
-    padding-top: 25%;
-    padding-bottom: 22%;
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
     align-self: center;
     font-size: 4rem;
     color: var(--color-prin);
@@ -50,6 +57,7 @@ h2 {
     color: var(--color-prin);
     padding-bottom: 2rem;
     padding-top: 2rem;
+    font-size: 2rem;
 }
 address {
     color: var(--color-prin);
@@ -87,11 +95,11 @@ form .input-coment {
     direction: ltr;
 }
 form .input-coment:focus {
-    border: 1px solid rgba(169, 50, 38);
+    border: 1px solid var(--color-bg);
     outline: none;
 }
 .boton-coment {
-    background: rgb(128, 119, 118);
+    background: var(--color-prin);
     border: none;
     width: 20%;
     cursor: pointer;
@@ -104,10 +112,10 @@ form .input-coment:focus {
     transition: .3s ease all;
 }
 .boton-coment:hover {
-    background: rgba(169, 50, 38);
+    background: var(--color-bg);
 }
 .boton {
-    background: rgb(128, 119, 118);
+    background: var(--color-prin);
     border: none;
     width: 20%;
     cursor: pointer;
@@ -120,17 +128,15 @@ form .input-coment:focus {
     transition: .3s ease all;
 }
 .boton:hover {
-    background: rgba(169, 50, 38);
+    background: var(--color-bg);
 }
-.boton.verde {
-    background: #00a04a;
-}
-.boton.verde:hover {
-    background: #00833d;
+.boton-card:hover {
+    background: var(--color-bg);
+    color: var(--color-prin);
 }
 .boton-card {
         grid-area: boton-card;
-        background: rgb(128, 119, 118);
+        background: var(--color-prin);
         border: none;
         width: 100%;
         cursor: pointer;
@@ -149,6 +155,12 @@ form .input-coment:focus {
     width: 100%;
     align-self: flex-start;
 }
+.artc {
+    background: #f2f2f2;
+    border-radius: 3px;
+    box-shadow: 0px 0px 30px rgba(221,221,211,0.3);
+    padding: 2rem;
+}
 .card-press {
     display: grid;
     grid-template-columns: 7fr 3fr;
@@ -158,6 +170,8 @@ form .input-coment:focus {
     background: #f2f2f2;
     border-radius: 3px;
     box-shadow: 0px 0px 30px rgba(221,221,211,0.3);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 .card {
     padding: 40px;
@@ -199,6 +213,10 @@ form .input-coment:focus {
     grid-template-columns: 1fr 1fr;
     grid-template-areas: 'text-descrip img-prin';
     grid-column-gap: 50px;
+}
+.home-posts {
+    padding-bottom: 2rem;
+    padding-top: 2rem;
 }
 .text-descrip {
     grid-area: text-descrip;

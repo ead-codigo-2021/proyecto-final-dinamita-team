@@ -121,7 +121,7 @@ form .input-coment:focus {
     background: rgba(169, 50, 38);
 }
 .boton {
-    background: rgb(128, 119, 118);
+    background: var(--color-prin);
     border: none;
     width: 20%;
     cursor: pointer;
@@ -143,20 +143,24 @@ form .input-coment:focus {
     background: #00833d;
 }
 .boton-card {
-        grid-area: boton-card;
-        background: rgb(128, 119, 118);
-        border: none;
-        width: 100%;
-        cursor: pointer;
-        color: #fff;
-        display: inline-block;
-        padding: 10px 10px;
-        border-radius: 3px;
-        text-align: center;
-        font-size: 1.2rem;
-        line-height: 22px;
-        transition: .3s ease all;
+    grid-area: boton-card;
+    background: var(--color-prin);
+    border: none;
+    width: 100%;
+    cursor: pointer;
+    color: #fff;
+    display: inline-block;
+    padding: 10px 10px;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 22px;
+    transition: .3s ease all;
 
+}
+.boton-card:hover {
+background-color: var(--color-bg);
+color: var(--color-prin);
 }
 .card-text {
     grid-area: text-card;
@@ -181,13 +185,13 @@ form .input-coment:focus {
     margin-top: 20px;
 }
 .site-header {
-    padding: 2rem;
     font-size: 1.5rem;
-    background-color: transparent;
+    background-color: var(--color-bg);
+    padding: 2rem;
 }
-#site-header {
-    background-image: url(/sitio-2/img/fondo.png);
-    background-color: transparent;
+.fondofrutas {
+    width: 100%;
+    object-fit: cover;
 }
 .site-navigation {
     display: flex;
@@ -250,11 +254,11 @@ form .input-coment:focus {
     position: static;
     border-top: 1px solid #d3d3d3;
     border-bottom: 1px solid #d3d3d3;
-    margin-top: 26px;
+    margin-top: 7rem;
+    margin-bottom: 7rem;
     min-width:600px;
     width: 100%;
     height: 500px;
-    padding-bottom: 2rem;
 }
 
 .slide-inner {
@@ -378,6 +382,10 @@ form .input-coment:focus {
 .site-footer {
     padding: 2rem;
     background-color: var(--color-bg);
+}
+.search {
+    padding: 5rem 0;
+    padding-top: 11rem;
 }
 .no-margin { margin: 0 }
 .no-margin-superior { margin-top: 0 }
