@@ -26,12 +26,13 @@
 	<main class="site-main">
         <div class="container">
         <section class="home-presentation">
-        <h2 class="home-presentation__title">Presentación</h2>
-        <div class="home-presentation__description">
-            <p>Descripción de la Empresa e introducción al Sitio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore illum molestias sed, ullam fugit, labore cum commodi at itaque a veniam, sint natus amet vitae quasi accusantium dolor quidem.  
+         <h2 class="home-presentation__title text-descrip">Presentación</h2>
+          <div class="home-presentation__description text-descrip">
+              <p class="text-descrip">Descripción de la Empresa e introducción al Sitio. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis inventore illum molestias sed, ullam fugit, labore cum commodi at itaque a veniam, sint natus amet vitae quasi accusantium dolor quidem.  
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita beatae illo voluptatum enim aspernatur animi! Ea nisi et cupiditate debitis error in quasi laboriosam? Officia explicabo consectetur sit id reiciendis. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic vel a autem. Maxime dolorum ipsa facilis velit. Architecto, culpa atque consequatur hic vitae aperiam, recusandae dolore, magnam perferendis dolorem optio?
-			</p>
-        </div>
+			  </p>
+          </div>
+		  <img src="../framework/img/creati.PNG" alt="imagen principal" class="img-prin">
         </section>
         <section class="home-posts">
             <h2 class="home-posts__title">Últimas entradas</h2>
@@ -42,13 +43,67 @@
 					<p>ipsum dolor, sit amet consectetur adipisicing elit. Magnam, ratione! Eligendi reiciendis nesciunt esse labore laboriosam placeat doloremque, culpa voluptate amet odio vel enim, recusandae sunt nihil dignissimos aliquid! Facilis. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis quibusdam ipsam fuga esse inventore odit modi nesciunt exercitationem fugiat? Sapiente dignissimos expedita eius neque harum saepe quod. Accusamus, ipsum reiciendis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias corporis distinctio nobis laborum eaque velit ab deserunt ea cumque, quasi fugiat laudantium omnis neque commodi in tempora modi nulla veniam.</p>
 				</div>
             </article>
-
         </section>
-        <form action="">
-        <input class="input" type="text" placeholder="Buscar más Reciente">
-		<button class="boton">Buscar</button>
-	    </form>
+		<section>
+		  <h2 class="home-posts__title">Galería</h2>
+		  <div class="gallery">			
+			  <img class="image featured-image" src="../framework/img/Codigo QR.png" alt="">
+			  <img class="image" src="../framework/img/Codigo QR (2).png" alt="">
+			  <img class="image" src="../framework/img/Cartel Expositivo.png" alt="">
+			  <img class="image" src="../framework/img/Cartel Expositivo (2).png" alt="">
+		  </div>
+		</section>
+		<section>
+		  <h2 class="home-posts__title">Busqueda</h2>
+          <form action="">
+          <input class="input" type="text" placeholder="Buscar más Reciente">
+  	         <button class="boton">Buscar</button>
+	       </form>
+		</section>   
+		<section>
+			<h2 class="home-posts__title">Comentarios</h2>
+			<form action="">
+			<input class="input-coment" type="text" placeholder="Escribe tu comentario">
+				 <button class="boton-coment">Enviar</button>
+			 </form>
+		  </section>
     </div>
+	<article class="container">
+		<h2>Presentación</h2>
+		<div class="slide">
+			<div class="slide-inner">
+				<input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden="" checked="checked">
+				<div class="slide-item">
+					<img src="../sitio-1/assets/img/ludo.jpg">
+				</div>
+				<input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
+				<div class="slide-item">
+					<img src="../sitio-1/assets/img/chess color.jpg">
+				</div>
+				<input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
+				<div class="slide-item">
+					<img src="../sitio-1/assets/img/board-games.jpg">
+				</div>
+				<label for="slide-3" class="slide-control prev control-1">‹</label>
+				<label for="slide-2" class="slide-control next control-1">›</label>
+				<label for="slide-1" class="slide-control prev control-2">‹</label>
+				<label for="slide-3" class="slide-control next control-2">›</label>
+				<label for="slide-2" class="slide-control prev control-3">‹</label>
+				<label for="slide-1" class="slide-control next control-3">›</label>
+				<ol class="slide-indicador">
+					<li>
+						<label for="slide-1" class="slide-circle">•</label>
+					</li>
+					<li>
+						<label for="slide-2" class="slide-circle">•</label>
+					</li>
+					<li>
+						<label for="slide-3" class="slide-circle">•</label>
+					</li>
+				</ol>
+			</div>
+		</div>
+	</article>
     </main>
 	<div class="container">
 		<h1>Encabezado H1</h1>
@@ -65,12 +120,28 @@
 
 	<div class="container">
 		<main class="grid col-3 med-col-2 peq-col-1">
-			<div class="card">Card 1</div>
-			<div class="card">Card 2</div>
-			<div class="card">Card 3</div>
-			<div class="card">Card 4</div>
-			<div class="card">Card 5</div>
-			<div class="card">Card 6</div>
+			<div class="card-press">
+				<div class="card-text">
+					<h3> Card Uno</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, deleniti.</p>
+				</div>
+				<button class="boton-card">Añadir al carro</button>
+			</div>
+			<div class="card-press">
+				<div class="card-text">
+					<h3> Card Uno</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, deleniti.</p>
+				</div>
+				<button class="boton-card">Añadir al carro</button>
+			</div>
+			<div class="card-press">
+				<div class="card-text">
+					<h3> Card Uno</h3>
+					<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita, deleniti.</p>
+				</div>
+				<button class="boton-card">Añadir al carro</button>
+			</div>
+			
 		</main>
 	</div>
 

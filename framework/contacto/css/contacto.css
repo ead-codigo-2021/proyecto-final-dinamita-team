@@ -1,13 +1,52 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 *,
 *::after,
 *::before {
     box-sizing: border-box;
 }
-
+/* Formulario */ 
+.form-register {
+    width: 400px;
+    background: rgba(149, 165, 166);
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    border-radius: 4px;
+    font-family: 'Raleway', sans-serif;
+}
+.controls {
+    width: 100%;
+    padding: 5px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+}
+.form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+}
+.form-register a {
+    color: rgba(169, 50, 38);
+    text-decoration: none;
+    line-height: 40px;
+    font-family: 'Raleway', sans-serif;
+}
+.form-register a:hover {
+    color: rgba(169, 50, 38);
+    text-decoration: underline;
+}
+.form-register .buttons {
+    width: 100%;
+    background: rgba(169, 50, 38);
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    margin-bottom: 10px;
+    font-family: 'Raleway', sans-serif;
+    border-radius: 4px;
+}
 :root {
     --font-family-base: 'Raleway', sans-serif;
     --font-family-alt: 'Roboto Slab', serif;
