@@ -89,6 +89,72 @@ address {
 .img-a {
     grid-area: img-a;
 }
+/* Formulario de contacto*/
+form.form_contact{
+    width: 80%;
+    padding: 30px 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form.form_contact h2{
+	font-size: 25px;
+	font-weight: 600;
+	color: var(--background--color);
+	margin-bottom: 30px;
+}
+
+form.form_contact .user_info{
+    display: flex;
+    flex-direction: column;
+    color: var(--background--color);
+}
+
+form.form_contact label{
+    font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    font-family: var(--font--family);
+	color: var(--color--darkpurple);
+	font-size: 14px;
+	font-weight: 400;
+}
+
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="button"]{
+    width: 180px;
+	background: var(--background--color);
+	padding: 10px;
+	border: none;
+	border-radius: 25px;
+
+    align-self: flex-end;
+
+    color: var(--color--darkpurple);
+	font-family: var(--font--family);
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+form.form_contact input[type="button"]:hover{
+    background: var(--color--darkpurple);
+    color: var(--background--color);
+}
 form .input {
     padding: 10px 15px;
     border-radius: 3px;

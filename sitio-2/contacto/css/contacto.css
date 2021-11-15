@@ -40,8 +40,8 @@ h3 {
 h1 {
     font-size: 2em;
     text-transform: uppercase;
-    padding-top: 25%;
-    padding-bottom: 22%;
+    padding-top: 3%;
+    padding-bottom: 2%;
     align-self: center;
     font-size: 4rem;
     color: var(--color-prin);
@@ -64,6 +64,45 @@ address {
     gap: 20px;
     margin-bottom: 20px;
 }
+.class-title-contact {
+    grid-area: prin-text;
+    text-align: center;
+    color: var(--color--darkpurple);
+    font-size: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding-top: 2rem;
+    padding-bottom: 25%;
+}
+.content-footer {
+    text-align: center;
+}
+
+.content-footer  h4{
+    color: var(--background--color);
+    border-bottom: .5px solid var(--background--color);
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.presentation-prin-contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 'prin-text class-title';
+    grid-column-gap: 50px;
+    align-items: center;
+    padding-top: 10%;
+    }
+    .class-title {
+        grid-area: class-title;
+        text-align: center;
+        color: var(--color--darkpurple);
+        font-size: 30px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 2rem;
+    
+    }
 form .input {
     padding: 10px 15px;
     border-radius: 3px;
@@ -75,6 +114,19 @@ form .input {
 form .input:focus {
     border: 1px solid var(--color-prin);
     outline: none;
+}
+.comentarios {
+    padding-bottom: 3rem;
+}
+.cont {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #d6d6d6 ;
+    border-radius: 3px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
 form .input-coment {
     padding: 10px 15px;
@@ -91,7 +143,7 @@ form .input-coment:focus {
     outline: none;
 }
 .boton-coment {
-    background: rgb(128, 119, 118);
+    background: var(--color-prin);
     border: none;
     width: 20%;
     cursor: pointer;
@@ -104,7 +156,7 @@ form .input-coment:focus {
     transition: .3s ease all;
 }
 .boton-coment:hover {
-    background: rgba(169, 50, 38);
+    background: var(--color-bg);
 }
 .boton {
     background: rgb(128, 119, 118);
@@ -347,6 +399,72 @@ form .input-coment:focus {
 #slide-2:checked ~ .control-2 ~ .slide-indicador li:nth-child(2) .slide-circle,
 #slide-3:checked ~ .control-3 ~ .slide-indicador li:nth-child(3) .slide-circle {
     color: rgba(169, 50, 38);
+}
+/* Formulario de contacto*/
+form.form_contact{
+    width: 80%;
+    padding: 30px 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form.form_contact h2{
+	font-size: 25px;
+	font-weight: 600;
+	color: var(--background--color);
+	margin-bottom: 30px;
+}
+
+form.form_contact .user_info{
+    display: flex;
+    flex-direction: column;
+    color: var(--background--color);
+}
+
+form.form_contact label{
+    font-weight: 600;
+}
+
+form.form_contact input,
+form.form_contact textarea{
+    width: 100%;
+    padding: 8px 0px 5px;
+    margin-bottom: 20px;
+
+    border: none;
+    border-bottom: 2px solid #D1D1D1;
+
+    font-family: var(--font--family);
+	color: var(--color--darkpurple);
+	font-size: 14px;
+	font-weight: 400;
+}
+
+form.form_contact textarea{
+    max-width: 100%;
+    min-width: 100%;
+    max-height: 90px;
+}
+
+form.form_contact input[type="button"]{
+    width: 180px;
+	background: var(--background--color);
+	padding: 10px;
+	border: none;
+	border-radius: 25px;
+
+    align-self: flex-end;
+
+    color: var(--color--darkpurple);
+	font-family: var(--font--family);
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+form.form_contact input[type="button"]:hover{
+    background: var(--color--darkpurple);
+    color: var(--background--color);
 }
 
 #titulo {
